@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dst/index.d.ts"
+    },
+    "./*": {
+      "import": "./dist/*",
+      "types": "./dist/*"
+    }
+  },
+  "volta": {
+    "node": "16.14.2",
+    "yarn": "1.22.18"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.0-dev.20220419"
+  }
+}
